@@ -178,6 +178,7 @@ footer {
 footer>.top {
 
     background-color: #333333;
+    /* border: 2px solid red; */
 
 
 
@@ -186,9 +187,17 @@ footer>.top {
 footer>.top>.block-container {
     padding: 30px;
     margin: 0 auto;
-    width: 960px;
+
+                                      
+    /* width: 65%; */         /* width is imp for responsive */
+    max-width: 960px;
+    /* width: 960px; */
+
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-between;
+    /* border: 2px solid red; */
+
 }
 
 footer>.top>div p {
@@ -198,25 +207,19 @@ footer>.top>div p {
 }
 
 footer>.top>div a{
+
+    display: inline-block;  /*  on the a tag the margin doesn't work because it's an inline element. You may need to change its display property to inline-block or block.*/
+    margin-bottom: 10px;
+    /* margin: 30px; */
+
+    
     color: orange;
     font-size: 12px;
     /* border: 2px solid red; */
-    padding: 5px 0;
-    border-bottom: 1px groove #C0BAB6;
-    /* margin: 30px; */
+    border-bottom: 1px dashed #C0BAB6;
+
 
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -234,7 +237,7 @@ footer>.bottom>.text {
     align-items: center;
     height: 55px;
     margin: 0 auto;
-    width: 960px;
+    max-width: 960px;
     /* border: 2px solid red; */
     color: #979797;
     font-size: 13px;
@@ -243,3 +246,8 @@ footer>.bottom>.text {
 footer>.bottom>.text a {
     color: #979797;
 }
+
+
+
+
+
